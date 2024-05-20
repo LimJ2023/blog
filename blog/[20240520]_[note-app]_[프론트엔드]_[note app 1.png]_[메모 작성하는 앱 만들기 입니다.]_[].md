@@ -1,7 +1,7 @@
 
-![노트이미지1](post_img/note-app/note app 1.png)
+![노트이미지1](post_img/note-app/note-app1.png)
 
-![노트이미지2](post_img/note-app/note app 2.png)
+![노트이미지2](post_img/note-app/note-app2.png)
 
 간단한 메모 작성 앱을 만들었다.
 

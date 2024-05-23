@@ -145,7 +145,7 @@ function togglePlayPause(){
     if(playing) {
         song.pause();
     } else {
-        song.play
+        song.play();
     }
     playing = !playing;
 

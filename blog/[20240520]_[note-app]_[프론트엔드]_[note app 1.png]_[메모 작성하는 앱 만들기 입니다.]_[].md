@@ -3,6 +3,10 @@
 
 ![노트이미지2](post_img/note-app/note-app2.png)
 
+
+[실행하기](app/noteApp/index.html)
+
+
 간단한 메모 작성 앱을 만들었다.
 
 간단하지만 중요한 기능들을 배웠는데 다음과 같다.

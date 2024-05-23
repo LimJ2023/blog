@@ -222,6 +222,4 @@ function prevSong() {
 
 페이징 처리와도 비슷한 방식으로 처음엔 어려웠지만 보다보니 이해가 가는 코드였다.
 
-
-
-https://limj2023.github.io/blog/app/musicPlayerApp/index.html
+[실행하기](app/musicPlayerApp/index.html)

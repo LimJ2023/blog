@@ -4,6 +4,10 @@
 ![음악2](post_img/music-app/music2.png)
 
 
+[실행하기](app/musicPlayerApp/index.html)
+
+
+
 간단하지만 멋진 음악 재생 앱을 만들었다.
 
 
@@ -222,4 +226,3 @@ function prevSong() {
 
 페이징 처리와도 비슷한 방식으로 처음엔 어려웠지만 보다보니 이해가 가는 코드였다.
 
-[실행하기](app/musicPlayerApp/index.html)

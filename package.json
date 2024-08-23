@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "- GitHub Pages를 활용하여 블로그를 손쉽게 제작할 수 있는 서비스입니다.\r - fork를 이용하여 자신의 레포지토리로 이동하여 나만의 블로그를 제작할 수 있습니다.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

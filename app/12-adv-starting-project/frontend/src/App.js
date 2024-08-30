@@ -23,12 +23,18 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/Pages/HomePage";
-import EventDetailPage from "./components/Pages/EventDetailPage";
-import NewEventPage from "./components/Pages/NewEventPage";
+import EventDetailPage, {
+    loader as eventDetailLoader,
+    action as deleteEventAction,
+} from "./components/Pages/EventDetailPage";
+import NewEventPage, {
+    action as newEventAction,
+} from "./components/Pages/NewEventPage";
 import EditEventPage from "./components/Pages/EditEventPage";
 import RootLayout from "./components/RootLayout";
 import EventRootLayout from "./components/Pages/EventRootLayout";
 import EventsPage, { loader as eventLoader } from "./components/Pages/Events";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -48,16 +54,25 @@ const router = createBrowserRouter([
                         loader: eventLoader,
                     },
                     {
-                        path: ":id",
-                        element: <EventDetailPage />,
+                        path: ":eventId",
+                        id: "event-detail",
+                        loader: eventDetailLoader,
+                        children: [
+                            {
+                                index: true,
+                                element: <EventDetailPage />,
+                                action: deleteEventAction,
+                            },
+                            {
+                                path: "edit",
+                                element: <EditEventPage />,
+                            },
+                        ],
                     },
                     {
                         path: "new",
                         element: <NewEventPage />,
-                    },
-                    {
-                        path: ":id/edit",
-                        element: <EditEventPage />,
+                        action: newEventAction,
                     },
                 ],
             },

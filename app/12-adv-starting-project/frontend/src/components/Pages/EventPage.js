@@ -9,7 +9,7 @@ const EVENTS = [
         title: "event2",
     },
 ];
-function _EventPage() {
+function EventPage() {
     return (
         <>
             <h1>EventsPage</h1>
@@ -24,4 +24,4 @@ function _EventPage() {
     );
 }
 
-export default _EventPage;
+export default EventPage;

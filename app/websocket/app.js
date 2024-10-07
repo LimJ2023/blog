@@ -1,6 +1,5 @@
 // server.js
 const express = require("express");
-const http = require("http");
 const cors = require("cors");
 const mysql = require("mysql");
 require("dotenv").config();
